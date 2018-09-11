@@ -1,0 +1,1 @@
+{"version":3,"file":"RemoveUserAccessToken.d.ts","sourceRoot":"","sources":["../../../../src/app/Jobs/AccessToken/RemoveUserAccessToken.ts"],"names":[],"mappings":"AAAA,OAAO,EAAkB,kBAAkB,EAAE,GAAG,EAAE,MAAM,mBAAmB,CAAC;AAE5E,MAAM,CAAC,OAAO,4BAA6B,SAAQ,GAAG,CAAC,IAAI,CAAC;IACxD;;OAEG;IACU,MAAM,CAAC,GAAG,EAAE,kBAAkB,GAAG,OAAO,CAAC,IAAI,CAAC;CAK9D"}

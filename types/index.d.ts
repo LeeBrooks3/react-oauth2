@@ -16,3 +16,4 @@ export { default as oauth2 } from './app';
 export { default as config } from './config';
 export { default as reducer } from './store/reducer';
 export * from './store/middleware';
+//# sourceMappingURL=index.d.ts.map

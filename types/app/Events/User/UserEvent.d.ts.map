@@ -1,0 +1,1 @@
+{"version":3,"file":"UserEvent.d.ts","sourceRoot":"","sources":["../../../../src/app/Events/User/UserEvent.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,mBAAmB,CAAC;AAC1C,OAAO,EAAE,cAAc,EAAE,MAAM,wBAAwB,CAAC;AAExD,MAAM,CAAC,OAAO,CAAC,QAAQ,gBAAiB,SAAQ,KAAK;IACjD;;OAEG;IACH,SAAgB,IAAI,EAAE,cAAc,CAAC;IAErC;;OAEG;gBACgB,IAAI,EAAE,cAAc;CAK1C"}

@@ -6,9 +6,9 @@ import UserAccessTokenRestored from '../app/Events/AccessToken/UserAccessTokenRe
 import UserRetrieved from '../app/Events/User/UserRetrieved';
 import Logout from '../app/Jobs/Logout';
 
-interface StateInterface<User = ModelInterface> {
+interface StateInterface<U = ModelInterface> {
     token?: AccessToken;
-    user?: User;
+    user?: U;
 }
 
 const initialState: StateInterface = {};
