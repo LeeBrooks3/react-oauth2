@@ -46,6 +46,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 exports.__esModule = true;
 var react_1 = require("@leebrooks3/react");
+var typescript_oauth2_1 = require("@leebrooks3/typescript-oauth2");
 var UserAccessTokenRestored_1 = require("../../Events/AccessToken/UserAccessTokenRestored");
 var RestoreUserAccessToken = /** @class */ (function (_super) {
     __extends(RestoreUserAccessToken, _super);
@@ -57,17 +58,18 @@ var RestoreUserAccessToken = /** @class */ (function (_super) {
      */
     RestoreUserAccessToken.prototype.handle = function (app, dispatch) {
         return __awaiter(this, void 0, void 0, function () {
-            var cache, token;
+            var cache, tokenData, token;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         cache = app.make('cache');
                         return [4 /*yield*/, cache.get('oauth2.accessToken')];
                     case 1:
-                        token = _a.sent();
-                        if (!token) {
+                        tokenData = _a.sent();
+                        if (!tokenData) {
                             return [2 /*return*/, Promise.reject()];
                         }
+                        token = new typescript_oauth2_1.AccessToken(tokenData);
                         dispatch(new UserAccessTokenRestored_1["default"](token));
                         return [2 /*return*/, Promise.resolve(token)];
                 }

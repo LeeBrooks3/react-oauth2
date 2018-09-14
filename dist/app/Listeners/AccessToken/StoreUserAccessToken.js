@@ -59,7 +59,7 @@ var StoreUserAccessToken = /** @class */ (function (_super) {
             var cache;
             return __generator(this, function (_a) {
                 cache = app.make('cache');
-                return [2 /*return*/, cache.set('oauth2.accessToken', event.accessToken)];
+                return [2 /*return*/, cache.set('oauth2.accessToken', event.accessToken.getAttributes())];
             });
         });
     };

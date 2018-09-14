@@ -9,6 +9,6 @@ export default class StoreUserAccessToken extends Listener<void> {
     public async handle(event: AccessTokenEvent, app: ContainerInterface, dispatch: Dispatch): Promise<void> {
         const cache: CacheInterface = app.make('cache');
 
-        return cache.set('oauth2.accessToken', event.accessToken);
+        return cache.set('oauth2.accessToken', event.accessToken.getAttributes());
     }
 }

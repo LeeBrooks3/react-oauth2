@@ -1,7 +1,7 @@
 import { Event } from '@leebrooks3/react';
 import { ModelInterface } from '@leebrooks3/typescript';
 import { AccessToken } from '@leebrooks3/typescript-oauth2';
-interface StateInterface<U = ModelInterface> {
+export interface StateInterface<U = ModelInterface> {
     token?: AccessToken;
     user?: U;
 }

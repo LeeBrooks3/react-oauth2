@@ -9,11 +9,13 @@ export default class RestoreUserAccessToken extends Job<AccessToken> {
      */
     public async handle(app: ContainerInterface, dispatch: Dispatch<Action>): Promise<AccessToken> {
         const cache: CacheInterface = app.make('cache');
-        const token: AccessToken = await cache.get('oauth2.accessToken');
+        const tokenData: object = await cache.get('oauth2.accessToken');
 
-        if (!token) {
+        if (!tokenData) {
             return Promise.reject();
         }
+
+        const token: AccessToken = new AccessToken(tokenData);
 
         dispatch(new UserAccessTokenRestored(token));
 
