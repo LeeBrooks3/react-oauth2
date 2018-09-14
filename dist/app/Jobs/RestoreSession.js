@@ -47,15 +47,15 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 exports.__esModule = true;
 var react_1 = require("@leebrooks3/react");
 var RestoreUserAccessToken_1 = require("./AccessToken/RestoreUserAccessToken");
-var Login = /** @class */ (function (_super) {
-    __extends(Login, _super);
-    function Login() {
+var RestoreSession = /** @class */ (function (_super) {
+    __extends(RestoreSession, _super);
+    function RestoreSession() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     /**
      * Triggers the chain of actions to restore a session.
      */
-    Login.prototype.handle = function (app, dispatch) {
+    RestoreSession.prototype.handle = function (app, dispatch) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -67,7 +67,7 @@ var Login = /** @class */ (function (_super) {
             });
         });
     };
-    return Login;
+    return RestoreSession;
 }(react_1.Job));
-exports["default"] = Login;
+exports["default"] = RestoreSession;
 //# sourceMappingURL=RestoreSession.js.map

@@ -1,6 +1,6 @@
 import { ContainerInterface, Job } from '@leebrooks3/react';
 import { Action, Dispatch } from 'redux';
-export default class Login extends Job {
+export default class RestoreSession extends Job {
     /**
      * Triggers the chain of actions to restore a session.
      */
